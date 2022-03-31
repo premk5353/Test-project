@@ -3,7 +3,7 @@ const transporter = nodemailer.createTransport({
     service:"gmail",
     auth:  {
         user:"premprk5353@gmail.com",
-        pass:"prem@5353"
+        pass:"premrathik"
     }
 });
 const mailoptions = {
@@ -12,11 +12,12 @@ const mailoptions = {
     subject:"sending email using node.js",
     text:"Hi everyone, good morning to all."
 };
-transporter.sendMail(mailoptions,function(error, info){
+transporter.sendMail(options(error, info){
     if (error){
         console.log(error);
-        return;
-    }
-        console.log("email sent: " + info.responce);
+        }
+        else{
+
+        console.log("email is sent: " + info.responce);
     
 });
